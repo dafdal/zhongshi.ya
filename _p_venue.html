@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>钟氏集团 ZHONGSHI GROUP — 以竞技立身，以产业立信</title>
+<meta name="description" content="钟氏集团（ZHONGSHI GROUP）是一家以格斗与体能训练为根基的体育产业集团，业务覆盖成人训练、青少年体育、赛事运营与训练装备。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='3' y='3' width='42' height='42' fill='%230a0c0b' stroke='%23c9a227' stroke-width='2'/%3E%3Cpath d='M14 14h20v12a10 10 0 0 1-20 0z' fill='none' stroke='%23c9a227' stroke-width='2'/%3E%3Cpath d='M24 36v4' stroke='%23c9a227' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Oswald:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --bg:#0a0c0b;
+  --panel:#121614;
+  --panel2:#161b18;
+  --line:#2a322e;
+  --ink:#eee7db;
+  --mut:#9aa39c;
+  --dim:#6d7871;
+  --gold:#c9a227;
+  --gold-l:#e3c05a;
+  --green:#1f3a33;
+  --max:1240px;
+  --font-en:"Oswald","Noto Sans SC",sans-serif;
+  --font-cn:"Noto Sans SC","Microsoft YaHei",sans-serif;
+  --font-serif:"Noto Serif SC","Songti SC",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);font-family:var(--font-cn);
+  line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background:
+    radial-gradient(70vw 55vw at 88% -10%,rgba(31,58,51,.55),transparent 62%),
+    radial-gradient(50vw 40vw at 0% 60%,rgba(201,162,39,.06),transparent 65%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.16;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--gold);color:#0a0c0b}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.eyebrow{
+  font-family:var(--font-en);font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:block}
+h2.title{
+  font-family:var(--font-serif);font-weight:900;letter-spacing:.01em;
+  font-size:clamp(30px,4.4vw,56px);line-height:1.12;margin-top:14px;
+}
+h2.title em{font-family:var(--font-en);font-style:normal;font-weight:600;color:var(--gold);letter-spacing:.02em;white-space:nowrap}
+.lead{color:var(--mut);font-size:15.5px;max-width:560px;margin-top:16px}
+.rule{height:1px;background:var(--line);width:100%}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,11,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:var(--max);margin:0 auto;height:74px;padding:0 clamp(18px,4vw,40px);display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand .mark{
+  width:40px;height:40px;flex:none;display:grid;place-items:center;
+  border:1px solid rgba(201,162,39,.55);color:var(--gold-l);
+  font-family:var(--font-en);font-weight:700;font-size:15px;letter-spacing:.06em;
+  background:linear-gradient(160deg,rgba(201,162,39,.14),rgba(10,12,11,.2));
+}
+.brand .bt{display:flex;flex-direction:column;line-height:1.15}
+.brand .bt b{font-family:var(--font-serif);font-size:17px;font-weight:900;letter-spacing:.14em}
+.brand .bt span{font-family:var(--font-en);font-size:9.5px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:26px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{font-size:13.5px;color:var(--mut);letter-spacing:.06em;white-space:nowrap;position:relative;padding:6px 0;transition:color .25s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .3s}
+.nav-links a:hover::after{right:0}
+.nav-right{display:flex;align-items:center;gap:16px;flex:none}
+.nav-tel{font-family:var(--font-en);font-size:13px;letter-spacing:.08em;color:var(--dim);white-space:nowrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;
+  font-family:var(--font-cn);font-size:14px;font-weight:500;letter-spacing:.08em;
+  padding:12px 22px;border:1px solid transparent;transition:.28s;background:none;color:var(--ink);
+}
+.btn-gold{background:var(--gold);color:#0a0c0b;border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-l);border-color:var(--gold-l)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-l)}
+.btn svg{width:15px;height:15px;transition:transform .28s}
+.btn:hover svg{transform:translateX(4px)}
+#burger{
+  display:none;width:42px;height:42px;border:1px solid var(--line);background:none;cursor:pointer;flex-direction:column;
+  align-items:center;justify-content:center;gap:5px;margin-left:auto;
+}
+#burger span{display:block;width:18px;height:1.5px;background:var(--ink);transition:.3s}
+#burger.on span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+#burger.on span:nth-child(2){opacity:0}
+#burger.on span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+#mnav{
+  position:fixed;left:0;right:0;top:74px;z-index:99;display:none;flex-direction:column;
+  background:rgba(10,12,11,.98);border-bottom:1px solid var(--line);padding:8px 18px 20px;
+}
+#mnav a{padding:13px 4px;border-bottom:1px solid rgba(42,50,46,.6);font-size:15px;color:var(--ink)}
+#mnav a:last-of-type{border-bottom:0}
+#mnav .m-cta{margin-top:14px;justify-content:center}
+
+/* HERO */
+#top{
+  position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  padding-top:100px;overflow:hidden;
+}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.62) saturate(.85)}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(10,12,11,.92) 0%,rgba(10,12,11,.45) 38%,rgba(10,12,11,.82) 78%,var(--bg) 100%),
+             linear-gradient(90deg,rgba(10,12,11,.88) 0%,rgba(10,12,11,.25) 55%,rgba(10,12,11,.7) 100%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;padding:0 clamp(18px,4vw,40px) 54px}
+.hero-tag{
+  display:inline-flex;align-items:center;flex-wrap:wrap;gap:10px 14px;max-width:100%;
+  font-family:var(--font-en);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
+  border:1px solid rgba(201,162,39,.32);padding:8px 15px;background:rgba(10,12,11,.5);
+}
+.hero-tag b{color:var(--ink);font-weight:600;white-space:nowrap}
+.hero-tag span{white-space:nowrap}
+.hero-title{
+  font-family:var(--font-serif);font-weight:900;letter-spacing:.02em;
+  font-size:clamp(46px,7vw,104px);line-height:1.02;margin:26px 0 0;
+  text-shadow:0 20px 60px rgba(0,0,0,.55);max-width:14em;
+}
+.hero-title i{font-style:normal;color:var(--gold)}
+.hero-sub{color:#c8c2b6;font-size:16px;max-width:600px;margin-top:20px;line-height:1.85}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-actions .btn{padding:15px 26px}
+.stats{
+  position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(201,162,39,.22);
+  background:rgba(10,12,11,.55);backdrop-filter:blur(6px);
+}
+.stat{padding:22px clamp(14px,3vw,26px) 26px;border-right:1px solid rgba(201,162,39,.14)}
+.stat:last-child{border-right:0}
+.stat strong{font-family:var(--font-serif);font-size:clamp(26px,3.2vw,40px);font-weight:900;color:var(--ink);display:block;line-height:1}
+.stat strong small{font-family:var(--font-en);font-size:12px;font-weight:500;color:var(--gold);margin-left:4px;letter-spacing:.12em}
+.stat span{display:block;font-size:12.5px;color:var(--dim);margin-top:9px;letter-spacing:.08em;white-space:nowrap}
+
+/* 跑马灯 */
+.strip{position:relative;z-index:2;border-bottom:1px solid var(--line);background:var(--green);overflow:hidden;padding:14px 0}
+.strip-track{display:flex;width:max-content;animation:mar 30s linear infinite}
+@keyframes mar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.strip-item{font-family:var(--font-en);font-size:12.5px;letter-spacing:.24em;color:#ddd3bd;padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:26px;text-transform:uppercase}
+.strip-item::after{content:"◆";color:var(--gold);font-size:9px;letter-spacing:0}
+
+/* 通用区块 */
+.sec{position:relative;z-index:2;padding:clamp(64px,8.5vw,112px) 0}
+.sec-dark{background:rgba(18,22,20,.5);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:52px}
+.sec-head .lhs{max-width:720px}
+
+/* 集团简介 */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:start}
+.about-copy p{color:var(--mut);font-size:15.5px;line-height:1.95;margin-top:18px}
+.about-copy p b{color:var(--ink);font-weight:500}
+.principles{margin-top:34px;border-top:1px solid var(--line)}
+.principles div{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.principles .pidx{font-family:var(--font-en);font-size:12px;color:var(--gold);letter-spacing:.14em;padding-top:3px}
+.principles h4{font-family:var(--font-serif);font-size:17px;font-weight:700;letter-spacing:.06em}
+.principles p{font-size:13.5px;color:var(--dim);margin-top:4px;line-height:1.7}
+.about-figure{position:relative}
+.about-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:brightness(.92) saturate(.9)}
+.about-figure .cap{position:absolute;left:0;bottom:0;background:rgba(10,12,11,.88);border-top:1px solid rgba(201,162,39,.35);padding:12px 18px;font-size:12px;color:var(--mut);letter-spacing:.1em}
+
+/* 产业板块 */
+.biz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.biz-card{background:var(--panel);padding:0 0 26px;display:flex;flex-direction:column;transition:background .3s}
+.biz-card:hover{background:var(--panel2)}
+.biz-card .pic{position:relative;overflow:hidden;aspect-ratio:3/2}
+.biz-card .pic img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) brightness(.85);transition:.6s}
+.biz-card:hover .pic img{filter:grayscale(0) brightness(.95);transform:scale(1.04)}
+.biz-card .no{position:absolute;left:14px;top:12px;font-family:var(--font-en);font-size:12px;letter-spacing:.16em;color:var(--gold-l);background:rgba(10,12,11,.75);padding:3px 8px;border:1px solid rgba(201,162,39,.4)}
+.biz-card .body{padding:22px 22px 0;display:flex;flex-direction:column;flex:1}
+.biz-card h3{font-family:var(--font-serif);font-size:19px;font-weight:700;letter-spacing:.08em}
+.biz-card .en{font-family:var(--font-en);font-size:10.5px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;margin-top:6px}
+.biz-card p{font-size:13.5px;color:var(--mut);line-height:1.8;margin-top:14px}
+.biz-card ul{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.biz-card li{font-size:12.5px;color:var(--dim);display:flex;gap:8px;align-items:baseline}
+.biz-card li::before{content:"—";color:var(--gold);flex:none}
+
+/* 发展历程 */
+.tl{display:grid;grid-template-columns:104px 30px 1fr;row-gap:30px;margin-top:10px}
+.tl-time{font-family:var(--font-en);font-size:15px;letter-spacing:.12em;color:var(--gold);padding-top:2px;text-align:right;white-space:nowrap}
+.tl-node{align-self:stretch;position:relative;display:flex;justify-content:center}
+.tl-node::before{content:"";position:absolute;top:0;bottom:-30px;left:50%;width:1px;background:var(--line);transform:translateX(-50%)}
+.tl-node i{position:relative;z-index:1;width:9px;height:9px;border:1px solid var(--gold);background:var(--bg);margin-top:6px;display:block}
+.tl-item:last-child .tl-node::before{bottom:auto;height:16px}
+.tl-item{display:contents}
+.tl-body{padding-bottom:2px}
+.tl-body h3{font-family:var(--font-serif);font-size:19px;font-weight:700;letter-spacing:.05em}
+.tl-body p{font-size:13.5px;color:var(--mut);line-height:1.8;margin-top:8px;max-width:640px}
+.tl-body .tag{display:inline-block;font-family:var(--font-en);font-size:10.5px;letter-spacing:.18em;color:var(--gold);border:1px solid rgba(201,162,39,.35);padding:2px 8px;margin-bottom:10px;text-transform:uppercase}
+
+/* 管理层 */
+.ceo-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,4.5vw,60px);align-items:center}
+.ceo-figure{position:relative}
+.ceo-figure img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 22%;filter:brightness(.96) contrast(1.02)}
+.ceo-figure .frame{position:absolute;inset:14px;border:1px solid rgba(201,162,39,.28);pointer-events:none}
+.ceo-figure .cap{position:absolute;left:0;bottom:0;right:0;background:rgba(10,12,11,.9);border-top:1px solid rgba(201,162,39,.4);padding:14px 18px}
+.ceo-figure .cap strong{display:block;font-family:var(--font-serif);font-size:15px;letter-spacing:.1em}
+.ceo-figure .cap span{font-family:var(--font-en);font-size:10.5px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.ceo-quote{font-family:var(--font-serif);font-size:clamp(22px,2.6vw,32px);font-weight:700;line-height:1.55;letter-spacing:.02em;position:relative;padding-left:26px}
+.ceo-quote::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--gold)}
+.ceo-name{margin-top:28px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ceo-name b{font-family:var(--font-serif);font-size:18px;letter-spacing:.1em}
+.ceo-name span{font-family:var(--font-en);font-size:11.5px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.ceo-copy{margin-top:16px;color:var(--mut);font-size:14.5px;line-height:1.9}
+.ceo-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:30px}
+.ceo-metrics div{background:var(--panel);padding:16px 18px}
+.ceo-metrics strong{font-family:var(--font-serif);font-size:24px;font-weight:900;display:block;line-height:1.1}
+.ceo-metrics span{font-size:11.5px;color:var(--dim);letter-spacing:.08em;margin-top:6px;display:block}
+
+/* 管理团队 */
+.team-list{border-top:1px solid var(--line);margin-top:12px}
+.team-row{display:grid;grid-template-columns:60px 1.1fr 1fr 1.6fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.team-row .idx{font-family:var(--font-en);font-size:12px;letter-spacing:.14em;color:var(--dim)}
+.team-row .nm{font-family:var(--font-serif);font-size:18px;font-weight:700;letter-spacing:.1em}
+.team-row .rl{font-size:13px;color:var(--gold);letter-spacing:.06em}
+.team-row .ds{font-size:13px;color:var(--mut);line-height:1.75}
+
+/* 场馆 */
+.venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.venue-card{background:var(--panel);padding:26px 26px 28px}
+.venue-card .flag{display:inline-block;font-family:var(--font-en);font-size:10.5px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.venue-card h3{font-family:var(--font-serif);font-size:20px;font-weight:700;letter-spacing:.08em}
+.venue-card p{font-size:13px;color:var(--dim);margin-top:8px;line-height:1.8}
+.venue-card ul{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:7px 16px}
+.venue-card li{font-size:12.5px;color:var(--mut);display:flex;gap:7px;align-items:baseline}
+.venue-card li::before{content:"·";color:var(--gold);font-weight:700}
+.sched{margin-top:52px}
+.sched-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+.sched-head h3{font-family:var(--font-serif);font-size:20px;font-weight:700;letter-spacing:.08em}
+.sched-head span{font-family:var(--font-en);font-size:11px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+.tbl{width:100%;min-width:760px;border-collapse:collapse;table-layout:fixed}
+.tbl col{width:12.5%}
+.tbl th,.tbl td{border-right:1px solid rgba(42,50,46,.7);border-bottom:1px solid rgba(42,50,46,.7);padding:12px 10px;font-size:12.5px;text-align:left;vertical-align:top}
+.tbl th{background:rgba(31,58,51,.4);font-family:var(--font-en);font-size:11px;letter-spacing:.14em;color:var(--gold-l);text-transform:uppercase;font-weight:500}
+.tbl td:first-child,.tbl th:first-child{color:var(--ink);background:rgba(18,22,20,.8);font-family:var(--font-en);letter-spacing:.06em}
+.tbl td{color:var(--mut);line-height:1.6}
+
+/* 会员与合作 */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.plan{border:1px solid var(--line);background:var(--panel);padding:30px 28px 32px;position:relative;display:flex;flex-direction:column;transition:.3s}
+.plan:hover{border-color:rgba(201,162,39,.5)}
+.plan.hot{border-color:rgba(201,162,39,.65);background:linear-gradient(170deg,rgba(31,58,51,.55),var(--panel) 60%)}
+.plan .hot-tag{position:absolute;right:0;top:0;background:var(--gold);color:#0a0c0b;font-family:var(--font-en);font-size:10px;letter-spacing:.18em;padding:4px 10px}
+.plan h3{font-family:var(--font-serif);font-size:18px;font-weight:700;letter-spacing:.1em}
+.plan .pen{font-family:var(--font-en);font-size:10.5px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase;margin-top:5px}
+.plan .amount{margin-top:22px;font-family:var(--font-serif);font-size:38px;font-weight:900;line-height:1}
+.plan .amount small{font-family:var(--font-en);font-size:13px;font-weight:500;color:var(--dim);margin-left:6px;letter-spacing:.1em}
+.plan ul{margin-top:22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.plan li{font-size:13px;color:var(--mut);display:flex;gap:9px;align-items:baseline}
+.plan li::before{content:"✓";color:var(--gold);font-size:11px}
+.plan .btn{margin-top:26px;justify-content:center}
+
+/* 常见问答 */
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;align-items:center;gap:18px;padding:20px 0;background:none;border:0;color:var(--ink);cursor:pointer;text-align:left;font-family:var(--font-cn);font-size:15.5px;letter-spacing:.04em}
+.faq-q .idx{font-family:var(--font-en);font-size:11.5px;color:var(--dim);letter-spacing:.12em;flex:none}
+.faq-q svg{width:14px;height:14px;margin-left:auto;flex:none;stroke:var(--gold);transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{font-size:13.5px;color:var(--mut);line-height:1.9;padding:0 0 22px 44px}
+.faq-item.open .faq-a{max-height:320px}
+
+/* 预约表单 */
+.join-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,64px)}
+.join-info p{color:var(--mut);font-size:14.5px;line-height:1.9;margin-top:16px}
+.join-lines{margin-top:28px;border-top:1px solid var(--line)}
+.join-lines div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+.join-lines dt{color:var(--dim);letter-spacing:.08em}
+.join-lines dd{color:var(--ink);font-family:var(--font-en);letter-spacing:.06em}
+.form{border:1px solid var(--line);background:var(--panel);padding:clamp(24px,3.5vw,38px)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.field label{display:block;font-size:11.5px;letter-spacing:.14em;color:var(--dim);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;background:rgba(10,12,11,.65);border:1px solid var(--line);color:var(--ink);
+  font-family:var(--font-cn);font-size:14px;padding:11px 13px;outline:none;transition:border-color .25s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+.field textarea{resize:vertical;min-height:92px}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239aa39c' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:14px}
+.form .btn{width:100%;margin-top:6px;justify-content:center}
+.form .note{font-size:11.5px;color:var(--dim);margin-top:14px;line-height:1.7}
+.err{color:#e26a4a;font-size:11.5px;margin-top:6px;display:none}
+
+/* Footer */
+footer{position:relative;z-index:2;border-top:1px solid var(--line);background:#080a09;padding:56px 0 30px;margin-top:0}
+.f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+.f-brand{display:flex;align-items:center;gap:12px}
+.f-brand .mark{width:42px;height:42px;border:1px solid rgba(201,162,39,.55);display:grid;place-items:center;font-family:var(--font-en);font-weight:700;color:var(--gold-l);font-size:15px}
+.f-brand b{font-family:var(--font-serif);font-size:18px;letter-spacing:.14em;display:block}
+.f-brand span{font-family:var(--font-en);font-size:9.5px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+.f-about{color:var(--dim);font-size:12.5px;line-height:1.9;margin-top:18px;max-width:340px}
+.f-col h4{font-size:12px;letter-spacing:.18em;color:var(--gold);margin-bottom:14px;font-weight:500}
+.f-col a,.f-col p{display:block;font-size:12.5px;color:var(--mut);margin-bottom:9px;transition:color .25s}
+.f-col a:hover{color:var(--ink)}
+.f-bottom{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--dim);letter-spacing:.06em}
+
+/* toast */
+.toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+  background:var(--gold);color:#0a0c0b;font-size:13.5px;letter-spacing:.06em;padding:12px 22px;
+  opacity:0;pointer-events:none;transition:.35s;box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+/* 响应式 */
+@media(max-width:1080px){
+  .nav-links,.nav-cta,.nav-tel{display:none}
+  #burger{display:flex}
+  #mnav.open{display:flex}
+}
+@media(max-width:980px){
+  .about-grid,.ceo-grid,.join-grid{grid-template-columns:1fr}
+  .about-figure{max-width:540px}
+  .ceo-figure{max-width:420px;margin:0 auto}
+  .biz-grid{grid-template-columns:1fr 1fr}
+  .price-grid{grid-template-columns:1fr}
+  .venue-grid{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .team-row{grid-template-columns:44px 1fr;gap:6px 14px}
+  .team-row .rl{grid-column:2}
+  .team-row .ds{grid-column:2}
+}
+@media(max-width:620px){
+  .nav-inner{height:66px}
+  #mnav{top:66px}
+  .brand .mark{width:36px;height:36px;font-size:13px}
+  .brand .bt b{font-size:15px}
+  .brand .bt span{font-size:8.5px}
+  .hero-tag{font-size:10.5px;letter-spacing:.14em;padding:7px 12px;gap:8px 12px}
+  .hero-tag .ht-en{display:none}
+  .hero-title{font-size:clamp(42px,11.4vw,66px)}
+  .hero-sub{font-size:14px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{border-bottom:1px solid rgba(201,162,39,.14)}
+  .stat:nth-child(2){border-right:0}
+  .biz-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .f-top{grid-template-columns:1fr 1fr}
+  .ceo-metrics{grid-template-columns:1fr 1fr}
+  .tl{grid-template-columns:72px 26px 1fr;row-gap:24px}
+  .tl-node::before{bottom:-24px}
+  .hero-actions .btn{width:100%}
+  .plan{padding:24px 22px}
+}
+</style>
+<style>.rv{opacity:1!important;transform:none!important}.nav{display:none!important}html{scroll-behavior:auto}body{margin-top:-5778px}</style></head>
+<body>
+<!-- ===== 导航 ===== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="mark">ZS</span>
+      <span class="bt"><b>钟氏集团</b><span>Zhongshi Group</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">集团简介</a>
+      <a href="#business">产业板块</a>
+      <a href="#history">发展历程</a>
+      <a href="#ceo">管理层</a>
+      <a href="#venue">场馆与合作</a>
+      <a href="#faq">常见问答</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:08382500018">0838-250 0018</a>
+      <a class="btn btn-gold nav-cta" href="#join">预约洽谈</a>
+      <button id="burger" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div id="mnav">
+  <a href="#about">集团简介</a>
+  <a href="#business">产业板块</a>
+  <a href="#history">发展历程</a>
+  <a href="#ceo">管理层</a>
+  <a href="#venue">场馆与合作</a>
+  <a href="#price">会员与合作</a>
+  <a href="#faq">常见问答</a>
+  <a class="btn btn-gold m-cta" href="#join">预约洽谈</a>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<section id="top">
+  <div class="hero-media">
+    <img src="assets/hero-ring.png" alt="夜间训练馆擂台训练">
+  </div>
+  <div class="hero-inner">
+    <span class="hero-tag"><b>EST. 2019</b><span>德阳 · 三座训练中心</span><span class="ht-en">TRAINING / EVENTS / GEAR</span></span>
+    <h1 class="hero-title">以竞技立身<br>以<i>产业</i>立信</h1>
+    <p class="hero-sub">从一间两百平米的训练房起步，六年间把训练标准、赛事体系与装备供应连成一条完整的产业链。钟氏集团不做加盟生意，只做能长期跑下去的体育基础设施。</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#join">预约一次场馆考察
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#business">了解四大板块</a>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>4<small>板块</small></strong><span>训练 / 少年 / 赛事 / 装备</span></div>
+    <div class="stat"><strong>3<small>座</small></strong><span>自营训练中心</span></div>
+    <div class="stat"><strong>6000<small>+</small></strong><span>累计在册学员</span></div>
+    <div class="stat"><strong>18<small>位</small></strong><span>全职教练与管理岗</span></div>
+  </div>
+</section>
+
+<!-- ===== 跑马灯 ===== -->
+<div class="strip">
+  <div class="strip-track">
+    <div class="strip-item">ZHONGSHI GROUP</div>
+    <div class="strip-item">训练 · 赛事 · 装备</div>
+    <div class="strip-item">EST. 2019 · DEYANG</div>
+    <div class="strip-item">以竞技立身 以产业立信</div>
+    <div class="strip-item">ZHONGSHI GROUP</div>
+    <div class="strip-item">训练 · 赛事 · 装备</div>
+    <div class="strip-item">EST. 2019 · DEYANG</div>
+    <div class="strip-item">以竞技立身 以产业立信</div>
+  </div>
+</div>
+
+<!-- ===== 集团简介 ===== -->
+<section id="about" class="sec">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy rv">
+        <span class="eyebrow">About the Group</span>
+        <h2 class="title">一间训练房<br>长成一套<i>体系</i></h2>
+        <p>钟氏集团创立于 2019 年，起点是德阳城北一间两百平米的旧厂房。没有加盟、没有补贴、没有流量投放，第一批学员只有十二个人，全部来自附近的三所中学。</p>
+        <p>六年过去，我们把同一套训练标准复制到三座自营场馆，把场馆里跑出来的对抗经验做成了自有赛事，又把赛事与训练消耗的器材交给了自己的装备线。<b>训练、赛事、装备三条线互相供血，是这家集团能活下来的原因。</b></p>
+        <div class="principles">
+          <div><span class="pidx">01</span><div><h4>训练标准先行</h4><p>每个动作有考核口径，每节课有强度区间，教练上岗前必须过内部认证。</p></div></div>
+          <div><span class="pidx">02</span><div><h4>用赛事检验</h4><p>训练成果不靠自评。学员每季度上一次实战或体测，数据进档案。</p></div></div>
+          <div><span class="pidx">03</span><div><h4>产业闭环</h4><p>场馆、赛事、装备互为客户，不靠单一收入结构撑规模。</p></div></div>
+        </div>
+      </div>
+      <figure class="about-figure rv">
+        <img src="assets/gear-shelf.png" alt="训练装备陈列架">
+        <figcaption class="cap">德阳旌阳旗舰馆 · 器材间</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 产业板块 ===== -->
+<section id="business" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Business Units</span>
+        <h2 class="title">四个板块<br>一套<i>账本</i></h2>
+      </div>
+      <p class="lead">集团不设控股平台，四个板块各自独立核算、独立带队，只在训练标准与品牌口径上统一。</p>
+    </div>
+    <div class="biz-grid">
+      <article class="biz-card rv">
+        <div class="pic"><img src="assets/hero-ring.png" alt="成人格斗训练"><span class="no">01</span></div>
+        <div class="body">
+          <h3>钟氏格斗</h3>
+          <span class="en">Zhongshi Fight</span>
+          <p>面向成人的格斗与体能训练，站立打击与地面缠斗双线并行，按周排课、按季度考核。</p>
+          <ul><li>站立打击 / 拳击 · 自由搏击</li><li>地面缠斗 / 柔术 · 摔跤</li><li>体能与恢复 / 力量 · 拉伸</li></ul>
+        </div>
+      </article>
+      <article class="biz-card rv">
+        <div class="pic"><img src="assets/youth-training.png" alt="青少年体育训练"><span class="no">02</span></div>
+        <div class="body">
+          <h3>钟氏少年</h3>
+          <span class="en">Zhongshi Youth</span>
+          <p>面向 8–15 岁的体能与防身体系，课程与校内体育考核衔接，不做对抗性选拔。</p>
+          <ul><li>体能基础 / 灵敏 · 协调</li><li>自我防护 / 脱身 · 呼救</li><li>假期集训 / 两周制</li></ul>
+        </div>
+      </article>
+      <article class="biz-card rv">
+        <div class="pic"><img src="assets/event-arena.png" alt="格斗赛事现场"><span class="no">03</span></div>
+        <div class="body">
+          <h3>钟氏赛事</h3>
+          <span class="en">Zhongshi Events</span>
+          <p>自有赛事品牌「钟鼎战」每季度一站，同时承接本地俱乐部赛与校园体育赛事执行。</p>
+          <ul><li>自有赛事 / 季度制</li><li>赛事承办 / 场地 · 裁判</li><li>裁判与计分培训</li></ul>
+        </div>
+      </article>
+      <article class="biz-card rv">
+        <div class="pic"><img src="assets/gear-shelf.png" alt="训练装备"><span class="no">04</span></div>
+        <div class="body">
+          <h3>钟氏装备</h3>
+          <span class="en">Zhongshi Gear</span>
+          <p>为自营场馆与周边俱乐部供应拳套、护具、地垫与体能器材，只做耐用款，不做联名。</p>
+          <ul><li>拳套护具 / 自有版型</li><li>地垫与围绳 / 场馆工程</li><li>器材维护 / 年检服务</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 发展历程 ===== -->
+<section id="history" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Milestones</span>
+        <h2 class="title">六年<i>五步</i><br>每一步都有账</h2>
+      </div>
+    </div>
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-time">2019</div>
+        <div class="tl-node"><i></i></div>
+        <div class="tl-body">
+          <span class="tag">起点</span>
+          <h3>德阳城北 · 两百平米训练房</h3>
+          <p>旧厂房改造，第一批学员 12 人，全部来自周边三所中学。没有销售，靠家长口口相传排满第一年的课表。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">2021</div>
+        <div class="tl-node"><i></i></div>
+        <div class="tl-body">
+          <span class="tag">扩张</span>
+          <h3>旌阳旗舰馆开业</h3>
+          <p>首个标准化场馆落地，设两块训练区与一间体能房。全职教练团队成型，建立教练内部认证与课时考核制度。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">2023</div>
+        <div class="tl-node"><i></i></div>
+        <div class="tl-body">
+          <span class="tag">赛事</span>
+          <h3>自有赛事品牌「钟鼎战」首站</h3>
+          <p>第一届在旗舰馆内场举办，六个俱乐部、四十二名选手参赛。此后固定为季度制，成为教练与学员的实战检验场。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">2025</div>
+        <div class="tl-node"><i></i></div>
+        <div class="tl-body">
+          <span class="tag">供应链</span>
+          <h3>装备线投产</h3>
+          <p>拳套、护具与地垫转为自有供应，先满足三地场馆，再向周边俱乐部开放。器材年检与维护服务同期上线。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">2026</div>
+        <div class="tl-node"><i></i></div>
+        <div class="tl-body">
+          <span class="tag">集团化</span>
+          <h3>四板块整合，成都高新馆筹备</h3>
+          <p>格斗、少年、赛事、装备四条线统一为钟氏集团品牌口径，第四座训练中心进入选址与设计阶段。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 管理层 ===== -->
+<section id="ceo" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Leadership</span>
+        <h2 class="title">创始人<br>与<i>董事会</i></h2>
+      </div>
+    </div>
+    <div class="ceo-grid">
+      <figure class="ceo-figure rv">
+        <img src="assets/ceo-portrait.png" alt="钟氏集团创始人·首席执行官">
+        <span class="frame"></span>
+        <figcaption class="cap">
+          <strong>创始人 · 首席执行官</strong>
+          <span>Founder &amp; Chief Executive</span>
+        </figcaption>
+      </figure>
+      <div class="rv">
+        <blockquote class="ceo-quote">奖牌不是挂在墙上看的，是拿来讲给后面那批孩子听的。</blockquote>
+        <div class="ceo-name">
+          <b>创始人 · 首席执行官</b>
+          <span>Founder &amp; Chief Executive Officer</span>
+        </div>
+        <p class="ceo-copy">从运动员到经营者，他保留了运动员最固执的那部分：不看规模看留存，不看营收看学员三年后还在不在练。集团所有场馆的教练认证标准，都是他一条一条写下来的。</p>
+        <div class="ceo-metrics">
+          <div><strong>2019</strong><span>集团创立</span></div>
+          <div><strong>3 座</strong><span>自营训练中心</span></div>
+          <div><strong>6000+</strong><span>累计在册学员</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 管理团队 ===== -->
+<section id="team" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Management</span>
+        <h2 class="title">四个板块<br>四位<i>负责人</i></h2>
+      </div>
+      <p class="lead">板块负责人均在集团内部成长起来，平均在岗年限 4.2 年。</p>
+    </div>
+    <div class="team-list">
+      <div class="team-row rv"><span class="idx">01</span><span class="nm">沈 烈</span><span class="rl">格斗训练总监</span><span class="ds">前职业拳击运动员，负责成人格斗线的课程结构与教练认证，主导制定内部十二项动作考核标准。</span></div>
+      <div class="team-row rv"><span class="idx">02</span><span class="nm">顾 岩</span><span class="rl">少年事业部负责人</span><span class="ds">体育教育背景，负责 8–15 岁课程与校内体育考核的衔接设计，管理三地少年班与假期集训。</span></div>
+      <div class="team-row rv"><span class="idx">03</span><span class="nm">程 野</span><span class="rl">赛事运营总监</span><span class="ds">负责「钟鼎战」季度赛的赛制、场地与裁判体系，同时承接本地俱乐部赛与校园赛事执行。</span></div>
+      <div class="team-row rv"><span class="idx">04</span><span class="nm">林 岚</span><span class="rl">装备线负责人</span><span class="ds">负责自有装备的版型、供应与器材年检服务，维持三地场馆的器材周转与维护周期。</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 场馆与课表 ===== -->
+<section id="venue" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Venues &amp; Schedule</span>
+        <h2 class="title">三座场馆<br>同一张<i>课表</i></h2>
+      </div>
+      <p class="lead">场馆全部自营，不设加盟。课表按周固定，临时调整提前 48 小时在学员群公告。</p>
+    </div>
+    <div class="venue-grid">
+      <div class="venue-card rv">
+        <span class="flag">Flagship · 01</span>
+        <h3>旌阳旗舰馆</h3>
+        <p>德阳旌阳区岷江西路 · 集团总部所在，两块训练区与独立体能房。</p>
+        <ul><li>标准拳台 ×1</li><li>缠斗地垫区 180㎡</li><li>体能房</li><li>器材间与年检</li><li>更衣淋浴</li><li>拉伸恢复区</li></ul>
+      </div>
+      <div class="venue-card rv">
+        <span class="flag">Branch · 02</span>
+        <h3>城南馆</h3>
+        <p>德阳旌阳区沱江路 · 以少年班与入门课为主，工作日晚间开放成人课。</p>
+        <ul><li>训练区 120㎡</li><li>少年班教室</li><li>体测区</li><li>家长等候区</li><li>更衣区</li><li>停车位</li></ul>
+      </div>
+    </div>
+    <div class="venue-card rv" style="margin-top:1px;border:1px solid var(--line)">
+      <span class="flag">Chengdu · 03</span>
+      <h3>成都高新馆 <span style="font-size:12px;color:var(--gold);letter-spacing:.1em">筹备中 · 2026 年底开放</span></h3>
+      <p>成都高新区 · 按赛事级标准设计，含一块可对外承办比赛的擂台与媒体区，将成为「钟鼎战」的常设主场。</p>
+      <ul><li>赛事级擂台</li><li>热身区</li><li>媒体与转播位</li><li>裁判席</li><li>选手休息区</li><li>器材仓</li></ul>
+    </div>
+
+    <div class="sched">
+      <div class="sched-head">
+        <h3>周课表 · 旌阳旗舰馆</h3>
+        <span>Weekly Schedule</span>
+      </div>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <colgroup><col><col><col><col><col><col><col><col></colgroup>
+          <thead>
+            <tr><th>时间</th><th>周一</th><th>周二</th><th>周三</th><th>周四</th><th>周五</th><th>周六</th><th>周日</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10:00</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>少年体能</td><td>少年防身</td></tr>
+            <tr><td>14:00</td><td>—</td><td>体能恢复</td><td>—</td><td>体能恢复</td><td>—</td><td>缠斗 open mat</td><td>站立打击</td></tr>
+            <tr><td>16:30</td><td>少年体能</td><td>少年防身</td><td>少年体能</td><td>少年防身</td><td>少年体能</td><td>—</td><td>—</td></tr>
+            <tr><td>19:00</td><td>拳击基础</td><td>柔术基础</td><td>拳击进阶</td><td>摔跤基础</td><td>实战课</td><td>拳击进阶</td><td>—</td></tr>
+            <tr><td>20:30</td><td>站立对抗</td><td>地面实战</td><td>体能力量</td><td>地面实战</td><td>—</td><td>自由训练</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 会员与合作 ===== -->
+<section id="price" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">Membership</span>
+        <h2 class="title">三种进入方式<br>没有<i>隐藏收费</i></h2>
+      </div>
+      <p class="lead">所有价格含场地、器材使用与季度体测。私教、赛事报名与装备另计。</p>
+    </div>
+    <div class="price-grid">
+      <div class="plan rv">
+        <h3>单次体验</h3>
+        <span class="pen">Trial Pass</span>
+        <div class="amount">99<small>元 / 次</small></div>
+        <ul><li>任选一节基础课</li><li>器材与护具免费借用</li><li>课后体测一次</li><li>教练一对一面谈</li></ul>
+        <a class="btn btn-ghost" href="#join">预约体验</a>
+      </div>
+      <div class="plan hot rv">
+        <span class="hot-tag">MOST USED</span>
+        <h3>月度会员</h3>
+        <span class="pen">Monthly</span>
+        <div class="amount">480<small>元 / 月</small></div>
+        <ul><li>当月课表不限次</li><li>三座场馆通用</li><li>季度体测与档案</li><li>open mat 自由训练</li><li>赛事观赛名额</li></ul>
+        <a class="btn btn-gold" href="#join">预约洽谈</a>
+      </div>
+      <div class="plan rv">
+        <h3>年度会员</h3>
+        <span class="pen">Annual</span>
+        <div class="amount">3980<small>元 / 年</small></div>
+        <ul><li>全年课表不限次</li><li>含两次私教评估</li><li>「钟鼎战」报名 8 折</li><li>装备线 9 折</li><li>假期集训优先排位</li></ul>
+        <a class="btn btn-ghost" href="#join">预约洽谈</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 常见问答 ===== -->
+<section id="faq" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="lhs">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="title">常被问到的<br><i>五个问题</i></h2>
+      </div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span class="idx">01</span>零基础可以来吗，会不会被直接安排对抗？
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a"><p>可以。入门课不安排任何自由对抗，前四周只做动作定型与体能适应。进入实战课需要教练评估，并配齐护齿、护裆与拳套。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span class="idx">02</span>孩子几岁可以报名少年班？
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a"><p>8 岁起可参加少年体能班，10 岁起可进入防身课。少年班不做对抗性选拔，课程强度与校内体育考核衔接，家长可全程旁观。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span class="idx">03</span>三座场馆的会员能通用吗？
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a"><p>月度与年度会员三馆通用，同一周内可跨馆上课。成都高新馆开放前，跨城部分不额外收费，但需提前一天在小程序里改约。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span class="idx">04</span>集团接不接受外部俱乐部或学校合作？
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a"><p>接受。合作分三类：场馆时段共用、赛事承办与裁判支持、装备供应与器材年检。合作不挂钟氏招牌，不设加盟费。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span class="idx">05</span>训练受伤怎么处理，有保险吗？
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a"><p>场馆配置急救包与冰敷设备，教练均持急救培训证明。会员可加购年度运动意外险；发生伤情按场馆应急预案先行处置，再走保险流程。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 预约 / 合作 ===== -->
+<section id="join" class="sec">
+  <div class="wrap">
+    <div class="join-grid">
+      <div class="join-info rv">
+        <span class="eyebrow">Contact</span>
+        <h2 class="title">来场馆<br>看一次<i>再决定</i></h2>
+        <p>不管是自己练、给孩子报班，还是谈场馆与赛事合作，最直接的方式是到现场看一节课。填完这张表，我们会在一个工作日内联系你。</p>
+        <dl class="join-lines">
+          <div><dt>集团总机</dt><dd>0838-250 0018</dd></div>
+          <div><dt>合作洽谈</dt><dd>cooperation@zhongshi-group.cn</dd></div>
+          <div><dt>总部地址</dt><dd>德阳旌阳区岷江西路 88 号</dd></div>
+          <div><dt>接待时间</dt><dd>周一至周日 10:00–21:00</dd></div>
+        </dl>
+      </div>
+      <form class="form rv" id="bookForm" novalidate>
+        <div class="frow">
+          <div class="field">
+            <label for="fname">姓名</label>
+            <input id="fname" name="name" type="text" placeholder="怎么称呼你" autocomplete="name">
+            <div class="err" id="e-name">请填写姓名</div>
+          </div>
+          <div class="field">
+            <label for="fphone">手机号</label>
+            <input id="fphone" name="phone" type="tel" placeholder="11 位手机号" autocomplete="tel">
+            <div class="err" id="e-phone">请填写正确的 11 位手机号</div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="field">
+            <label for="fintent">意向</label>
+            <select id="fintent" name="intent">
+              <option>成人格斗 / 体能</option>
+              <option>青少年体育</option>
+              <option>赛事承办 / 裁判</option>
+              <option>装备与场馆工程</option>
+              <option>其他合作</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fvenue">就近场馆</label>
+            <select id="fvenue" name="venue">
+              <option>旌阳旗舰馆</option>
+              <option>城南馆</option>
+              <option>成都高新馆（筹备）</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fmsg">补充说明</label>
+          <textarea id="fmsg" name="msg" placeholder="训练基础、时间安排，或合作的具体想法"></textarea>
+        </div>
+        <button class="btn btn-gold" type="submit">提交预约
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="note">本页为演示用途，表单不会真正提交到后台。实际预约请致电集团总机。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="f-brand">
+          <span class="mark">ZS</span>
+          <span><b>钟氏集团</b><span>Zhongshi Group</span></span>
+        </div>
+        <p class="f-about">以格斗与体能训练为根基的体育产业集团，业务覆盖成人训练、青少年体育、赛事运营与训练装备。三座自营场馆，一套训练标准。</p>
+      </div>
+      <div class="f-col">
+        <h4>产业板块</h4>
+        <a href="#business">钟氏格斗</a>
+        <a href="#business">钟氏少年</a>
+        <a href="#business">钟氏赛事</a>
+        <a href="#business">钟氏装备</a>
+      </div>
+      <div class="f-col">
+        <h4>集团信息</h4>
+        <a href="#about">集团简介</a>
+        <a href="#history">发展历程</a>
+        <a href="#ceo">管理层</a>
+        <a href="#join">合作洽谈</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 钟氏集团 ZHONGSHI GROUP · 本站为企业形象演示页</span>
+      <span>德阳 · 成都</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">已收到，我们会尽快联系你</div>
+
+<script>
+(function(){
+  "use strict";
+  var burger = document.getElementById("burger");
+  var mnav = document.getElementById("mnav");
+  if (burger && mnav) {
+    burger.addEventListener("click", function(){
+      var open = mnav.classList.toggle("open");
+      burger.classList.toggle("on", open);
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "关闭菜单" : "打开菜单");
+    });
+    Array.prototype.forEach.call(mnav.querySelectorAll("a"), function(a){
+      a.addEventListener("click", function(){
+        mnav.classList.remove("open");
+        burger.classList.remove("on");
+        burger.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".faq-q"), function(btn){
+    btn.addEventListener("click", function(){
+      var item = btn.parentNode;
+      var open = item.classList.contains("open");
+      Array.prototype.forEach.call(document.querySelectorAll(".faq-item"), function(it){
+        it.classList.remove("open");
+        it.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+      });
+      if (!open) {
+        item.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
+  var rvs = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: .12 });
+    Array.prototype.forEach.call(rvs, function(el){ io.observe(el); });
+  } else {
+    Array.prototype.forEach.call(rvs, function(el){ el.classList.add("in"); });
+  }
+
+  var form = document.getElementById("bookForm");
+  var toast = document.getElementById("toast");
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 3200);
+  }
+  if (form) {
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("fname");
+      var phone = document.getElementById("fphone");
+      var eName = document.getElementById("e-name");
+      var ePhone = document.getElementById("e-phone");
+      var ok = true;
+      if (!name.value.trim()) { eName.style.display = "block"; ok = false; } else { eName.style.display = "none"; }
+      if (!/^1[3-9]\d{9}$/.test(phone.value.trim())) { ePhone.style.display = "block"; ok = false; } else { ePhone.style.display = "none"; }
+      if (!ok) return;
+      showToast("已收到，" + name.value.trim() + "，我们会在一个工作日内联系你");
+      form.reset();
+    });
+    ["fname","fphone"].forEach(function(id){
+      var el = document.getElementById(id);
+      el.addEventListener("input", function(){
+        var tip = document.getElementById("e-" + (id === "fname" ? "name" : "phone"));
+        if (tip) tip.style.display = "none";
+      });
+    });
+  }
+}());
+</script>
+
+<!-- TODO-NEXT -->
+</body>
+</html>
